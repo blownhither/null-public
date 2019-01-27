@@ -1,5 +1,5 @@
 const reply_map = {
-    "The Mona Lisa": "A portrait painting by Leonardo da Vinci, the best known work of art in the world. Good for you!",
+    "The Mona Lisa": "The Mona Lisa! A portrait painting by Leonardo da Vinci, the best known work of art in the world. Amazing!",
     "triangle": "Triangle is one of some basic gemetric shape, are you interested in Geometry or Math?",
     "cat": "What a lovely cat! Do you like dogs as well? Cats and dogs are best friends of human beings. ",
     "apple": "You drew an apple, is the apple your favorite fruit? Fruits are very helpful for your health.",
