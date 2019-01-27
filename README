@@ -1,0 +1,34 @@
+# A.I. 
+
+### Hack@Brown
+
+Fumi Honda, Queena Zhang, Yang Zhang, Ziyin Ma
+
+
+
+
+## Inspiration
+In 2018, about 1 in 59 children is diagnosed with autism. Treatments are expensive and over-booked, parents couldn’t afford more accompanying time.
+
+**Visual communication** is more effective than text for intellectual and social development of children with autism. 
+
+## What it does
+
+With our "sketch captioning" technology, they can join conversation with AI via drawing!
+[Demo Site](http://35.185.86.112/)
+
+## How I built it
+
+- We built a CNN model served on **SPELL**.
+- We built a webpage with **webflow** for interaction including (user) drawing sketches and making conversation.
+- We used GCP service to synthesis text-to-speech read aloud to users.
+
+- We **interviewed** with multiple autism-related institutions and physicians in China to understand the pain points of early autism treatment.
+- We **validated** our ideas on a medical basis under professional guidance.
+
+## Challenges I ran into
+
+
+- We co-developed with **SPELL** team to overcome difficulties in this newly-released product.
+- We maintained interactiveness of our web app while keep it good-looking with **webflow**.
+- We encountered two new technologies (**SPELL**, **webflow**) and learned to leverage them efficiently.
