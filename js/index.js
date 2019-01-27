@@ -54,7 +54,7 @@ $(document).ready(function () {
     let outer_width = parseFloat($('#pad_container').css('width').replace("px", ""));
     let canvas_width = parseFloat($('canvas').css('width').replace("px", ""));
     console.log(width, canvas_width, outer_width, (outer_width - width) / 2 + 'px');
-    $('canvas').css('left', (outer_width - width) / 2 + 'px');
+    $('.konvajs-content').css('left', (outer_width - width) / 2 + 'px');
 
 
 // now we need to bind some events
