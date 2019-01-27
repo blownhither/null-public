@@ -42,8 +42,8 @@
 
     <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Video</a>
+            <li class="nav-item">
+                <a class="nav-link" href="#video-section">Video</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#demo">Demo</a>
@@ -52,13 +52,17 @@
                 <a class="nav-link" href="#vision">Vision</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="#sponsor-section">Sponsors</a>
+            </li>
+
+            <li class="nav-item">
                 <a class="nav-link" href="#team">Team</a>
             </li>
         </ul>
         <div class="pull-right grey-text">Hack@Brown 2019</div>
     </div>
 </nav>
-<div class="hp-row2">
+<div class="hp-row2" id="video-section">
     <div id="see-video">
         <div class="subtitle">Hack Brown</div>
         <h3 class="h3">Look inside Demo</h3>
@@ -84,20 +88,22 @@
 <!--Demo part starts here-->
 <div class="section" id='demo'>
     <div class="center-text">
-        <h2 class="h2">Let your mind explore</h2>
+        <span class="text-largest">DEMO</span>
     </div>
     <div class="row" id="demo-row">
         <div class="col-md-1"></div>
-        <div class="col-md-5">
+        <div class="col-md-5" id="pad_outer_container">
             <span class="center-text">
                 <span class="text-larger"><b>Your Space </b>| </span><span class="text-smaller my-text-gray">Talk to me via drawing</span>
             </span>
             <div id="pad_container"></div>
             <div class="row">
-                <div class="col-md-7"></div>
-                <button type="button" class="btn btn-outline-warning right-button" id="submit-button">Submit</button>
-                <div class="col-md-1"></div>
-                <button type="button" class="btn btn-outline-warning right-button" id="reset-button">Clear</button>
+                <div class="col-md-3"></div>
+                <button type="button" class="btn btn-outline-warning right-button col-md-2" id="submit-button">Submit
+                </button>
+                <div class="col-md-2"></div>
+                <button type="button" class="btn btn-outline-warning right-button col-md-2" id="reset-button">Clear
+                </button>
             </div>
         </div>
         <div class="col-md-6 border-left border-dark">
@@ -111,33 +117,61 @@
                 <div class="card col-md-6"
                      style="border-color: rgb(172,124,233); border-width: 3px; min-height: 340px;">
                     <div class="card-body">
-                        <p class="card-text" id="result">
-                            I'm waiting for you
-                        </p>
+                        <h1 class="card-text" id="result">
+                            I'm always here for you!<br>
+                        </h1>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div>
-        <p class="center-text" style="margin-top: 3%; color:gray;">Powered by <b>Spell</b> | <b>Webflow</b> | <b>GCP</b>
+        <p class="center-text text-medium" style="margin-top: 3%; color:gray;">Powered by
+            <img src="images/spell.png" style="max-height: 2.5rem"/>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+            <!--<b>Spell</b> | -->
+            <img src="images/webflow.png" style="max-height: 2.5rem"/>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+            <!--<b>Webflow</b> |-->
+            <img src="https://www.gstatic.com/images/branding/product/1x/google_cloud_48dp.png"
+                 style="max-height: 2.5rem"/>
+            <!--<b>GCP</b>-->
         </p>
     </div>
 
     <div class="hp-row4" id='vision'>
-        <h2 class="h2 white">In 2018, approximately 1 in 59 children is diagnosed with an autism</h2>
-        <div class="white-text">Visual Communication is a key component (in brain development for kids with ASD in
-            their early ages)
+        <div class="row">
+            <h1 class="experiences-h1 title-font text-largest" style="color: #fff; ">Vision</h1>
         </div>
-        <div class="white-text">Treatment around communication are too expensive, institutions are fully booked,
-            parents are too busy
+        <div class="row text-left" style="margin-top: 10%">
+            <div class="col-md-1"></div>
+            <ul class="col-md-4">
+                <li class="white-text">In 2018, about <b class="text-largest">1</b> in <b class="text-largest">59</b>
+                    children is diagnosed with autism in the U.S.
+                </li>
+                <br>
+                <li class="white-text">Treatment are expensive and over-booked;
+                    parents couldn’t afford more accompany time.
+                </li>
+                <br>
+            </ul>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <ul class="col-md-4">
+                <li class="white-text">
+                    <b class="text-largest">Visual</b> communication is more effective over textual ones for
+                    social development of kids with autism
+                </li>
+                <br>
+                <li class="white-text">
+                    Our prototype for sketch classification can be extended into more expressive sketch captioning.
+                </li>
+            </ul>
+
         </div>
-        <div class="white-text">Now we have prototype as A.I. sketch classification, a full version is a sketch
-            captioning (e.g.)
-        </div>
+
+
     </div>
 
-    <div style="margin-top: 10%">
+    <div style="margin-top: 10%" id="sponsor-section">
         <h1 class="center-text">Sponsors</h1>
         <div class="row" style="margin-top: 10%">
             <div class="col-md-2"></div>
@@ -190,9 +224,11 @@
                 </div>
             </div>
 
+        </div>
     </div>
     <div class="facebook">
-        <div class="footer-container fb-footer"><a href="#" class="w-inline-block"><img src="images/brown.png" alt=""
+        <div class="footer-container fb-footer"><a href="#" class="w-inline-block"><img src="images/brown.png"
+                                                                                        alt=""
                                                                                         height="70" width="60"></a>
             <div class="fb-footer-wrapper">
                 <div class="footer-text">
@@ -209,7 +245,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script>
     <script src="js/index.js"></script>
-        <script src="js/speakout.js"></script>
-         <script src="js/worddict.js"></script>
+    <script src="js/speakout.js"></script>
+    <script src="js/worddict.js"></script>
 </body>
 </html>

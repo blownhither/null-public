@@ -25,6 +25,7 @@ $(document).ready(function () {
     let canvas = document.createElement('canvas');
     canvas.width = stage.width() / 1.2;         // TODO: originally 2
     canvas.height = stage.height() / 1.2;
+    canvas.id = "pad_canvas";
 
 // created canvas we can add to layer as "Konva.Image" element
     let image = new Konva.Image({
@@ -37,6 +38,7 @@ $(document).ready(function () {
     layer.add(image);
     stage.draw();
 
+
 // Good. Now we need to get access to context element
     let context = canvas.getContext('2d');
     context.strokeStyle = "#df4b26";
@@ -47,6 +49,12 @@ $(document).ready(function () {
     let isPaint = false;
     let lastPointerPosition;
     let mode = 'brush';
+
+
+    let outer_width = parseFloat($('#pad_container').css('width').replace("px", ""));
+    let canvas_width = parseFloat($('canvas').css('width').replace("px", ""));
+    console.log(width, canvas_width, outer_width, (outer_width - width) / 2 + 'px');
+    $('canvas').css('left', (outer_width - width) / 2 + 'px');
 
 
 // now we need to bind some events
