@@ -34,30 +34,47 @@
     <link href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png" rel="apple-touch-icon">
 </head>
 <body>
-<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">A.I. </a><span class="grey-text">Autism Inspire</span>
-    <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Video</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Demo</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Vision</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Team</a>
-            </li>
-        </ul>
-        <div class="pull-right grey-text">Hack@Brown 2019</div>
+<div class="hero">
+    <div data-collapse="medium" data-animation="over-right" data-duration="400" class="navbar w-nav">
+        <div class="nav-container w-container"><a href="index.html" class="logo w-nav-brand w--current"></a>
+            <nav role="navigation" class="nav-menu w-nav-menu">
+                <a href="#see-video" class="nav-link w-nav-link">Demo</a>
+                <a href="#" class="nav-link w-nav-link">Vision</a>
+                <a href="#see-video" class="nav-link w-nav-link">Video</a>
+                <a href="experiences.html" class="nav-link w-nav-link">Team</a>
+                <!--<a href="#" class="nav-link w-nav-link">developers</a>-->
+                <!--<a href="#" class="nav-link w-nav-link">blog</a>-->
+            </nav>
+            <!--<a href="#" class="login-button w-hidden-medium w-hidden-small w-hidden-tiny w-button">Login</a>-->
+            <!--<div class="menu-button w-nav-button">-->
+            <!--<div class="w-icon-nav-menu"></div>-->
+            <!--</div>-->
+        </div>
     </div>
-</nav>
+    <div class="hero-cta-row">
+        <a href="#" class="hero-cta w-inline-block w-lightbox">
+            <div>Watch the Demo <span class="icon"></span></div>
+            <script type="application/json" class="w-json">{
+                "items": [
+                    {
+                        "type": "video",
+                        "html": "<iframe class=\"embedly-embed\" src=\"https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F3mXUzComwzk%3Fautoplay%3D1%26feature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D3mXUzComwzk&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F3mXUzComwzk%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&autoplay=1&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" frameborder=\"0\" allowfullscreen></iframe>",
+                        "thumbnailUrl": "https://i.embed.ly/1/image?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2F3mXUzComwzk%2Fhqdefault.jpg&key=866738f8f18b4394a18e371517a66ae0",
+                        "width": 940,
+                        "height": 528,
+                        "originalUrl": "https://youtu.be/3mXUzComwzk",
+                        "url": "http://www.youtube.com/watch?v=3mXUzComwzk"
+                    }
+                ]
+            }</script>
+        </a>
+        <a href="#" class="hero-cta w-inline-block">
+
+
+            <div>Learn More</div>
+        </a>
+    </div>
+</div>
 <div class="hp-row2">
     <div id="see-video">
         <div class="subtitle">Hack Brown</div>
@@ -80,12 +97,13 @@
         </a>
     </div>
 </div>
-<div class="section">
+
+    <div class="section" id='demo'>
 
     <div class="center-text">
         <h2 class="h2">Let your mind explore</h2>
         <!--<p class="grey-p">Oculus radically redefines digital entertainment. Immerse yourself in games or go inside your favorite movies. Time travel, space travel, or hang out with friends in VR.</p>-->
-        <div id="pad_container" class="text-center"></div>
+        <div id="pad_container"></div>
     </div>
 </div>
 <div class="hp-row4">
@@ -104,71 +122,59 @@
         <div>Rift</div>
         <a href="rift.html" class="button-cta black w-button">Learn More</a></div>
 </div>
-<div class="hp-row6">
-    <a href="#" data-ix="hp-feature-block" class="hp-feature-block w-inline-block">
-        <div class="hp-feature-text-wrapper">
-            <div class="grey-text">Featured Content</div>
-            <div class="hp-feature-text">EVE: Valkyrie</div>
+
+  <div class="container" id="team">
+        <div class="row">
+            <div class="heading-title text-center">
+                <h2 class="text-uppercase">Our Team </h2>
+                <h4>&nbsp;</h4>
+                <h3 class="p-top-30 half-txt">
+                    Ziyin Ma, Queena Zhang, Yang Zhang, Fumi Honda
+                    &nbsp;
+                </h3>
+                <div>&nbsp;</div>
+            </div>
+
+            <div>
+                <div style="text-align: center;">
+                    <div class="team-img" style="width: 650px; margin: 0 auto; background: #000; color: #fff;">
+                        <img src="images/team.jpeg" alt="team member" class="img-responsive" width="800">
+                    </div>
+
+                    <div class="team-hover">
+                        <div class="desk">
+                            <h3> &nbsp; </h3>
+                        </div>
+                        <div class="s-link">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div class="hp-feature-overlay"></div>
-        <div class="hp-feature-img eve"></div>
-    </a>
-    <a href="#" data-ix="hp-feature-block" class="hp-feature-block w-inline-block">
-        <div class="hp-feature-text-wrapper">
-            <div class="grey-text">Included with all rift purchases</div>
-            <div class="hp-feature-text">Lucky&#x27;s Tale</div>
+        <div class="row">
+            <div class="heading-title text-center">
+
+            </div>
         </div>
-        <div class="hp-feature-overlay"></div>
-        <div class="hp-feature-img lucky"></div>
-    </a>
-    <a href="#" data-ix="hp-feature-block" class="hp-feature-block w-inline-block">
-        <div class="hp-feature-text-wrapper">
-            <div class="grey-text">featured story</div>
-            <div class="hp-feature-text">A Closer Look at Oculus Medium and the Creative Power of Touch</div>
-        </div>
-        <div class="hp-feature-overlay"></div>
-        <div class="hp-feature-img story"></div>
-    </a>
-</div>
-<div class="footer">
-    <div class="footer-container">
-        <div class="footer-col">
-            <h5 class="footer-title">Product</h5><a href="#" class="footer-link">Experiences</a><a href="#"
-                                                                                                   class="footer-link">Gear
-            VR</a><a href="#" class="footer-link">Rift</a><a href="#" class="footer-link">Touch</a><a href="#"
-                                                                                                      class="footer-link">Oculus
-            Ready PCs</a><a href="#" class="footer-link">Medium</a></div>
-        <div class="footer-col">
-            <h5 class="footer-title">developers</h5><a href="#" class="footer-link">Developer Center</a><a href="#"
-                                                                                                           class="footer-link">Docs</a><a
-                href="#" class="footer-link">Downloads</a><a href="#" class="footer-link">Tools</a><a href="#"
-                                                                                                      class="footer-link">Developer
-            Blog</a><a href="#" class="footer-link">Developer Forums</a></div>
-        <div class="footer-col">
-            <h5 class="footer-title">company</h5><a href="#" class="footer-link">Blog</a><a href="#"
-                                                                                            class="footer-link">Careers</a><a
-                href="#" class="footer-link">News</a><a href="#" class="footer-link">Press Kit</a><a href="#"
-                                                                                                     class="footer-link">Story
-            Studio</a><a href="#" class="footer-link">Oculus Connect</a><a href="#" class="footer-link">Research</a>
-        </div>
-        <div class="footer-col">
-            <h5 class="footer-title">community</h5><a href="#" class="footer-link">Support</a><a href="#"
-                                                                                                 class="footer-link">Forums</a><a
-                href="#" class="footer-link">Order History</a></div>
+
     </div>
-</div>
 <div class="facebook">
-    <div class="footer-container fb-footer"><a href="#" class="w-inline-block"><img src="images/facebook.png"
-                                                                                    alt=""></a>
+    <div class="footer-container fb-footer"><a href="#" class="w-inline-block"><img src="images/brown.png" alt=""
+                height="70" width="60"></a>
         <div class="fb-footer-wrapper">
             <div class="footer-text">
-                <div>© 2016 Oculus VR, LLC.</div>
-                <a href="#" class="fb-footer-link">Privacy</a><a href="#" class="fb-footer-link">Legal</a></div>
-            <div class="social-wrapper"><a href="#" class="icon fb-footer-link"></a><a href="#"
-                                                                                        class="icon fb-footer-link"></a><a
-                    href="#" class="icon fb-footer-link"></a><a href="#" class="icon fb-footer-link"></a><a href="#"
-                                                                                                              class="icon fb-footer-link"></a>
+                <div>© 2019 Hack@Brown</div>
+                <a href="#" class="fb-footer-link">Privacy</a><a href="#" class="fb-footer-link">Legal</a>
             </div>
+            <!--div class="social-wrapper"><a href="#" class="icon fb-footer-link"></a><a href="#"
+                                                                                    class="icon fb-footer-link"></a><a
+                href="#" class="icon fb-footer-link"></a><a href="#" class="icon fb-footer-link"></a><a href="#"
+                                                                                                          class="icon fb-footer-link"></a>
+        </div-->
         </div>
     </div>
 </div>
