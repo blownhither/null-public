@@ -14,7 +14,7 @@ $(document).ready(function () {
     let stage = new Konva.Stage({
         container: 'pad_container',
         width: width,
-        height: height
+        height: height,
     });
 
     let layer = new Konva.Layer();
@@ -23,8 +23,9 @@ $(document).ready(function () {
 
 // then we are going to draw into special canvas element
     let canvas = document.createElement('canvas');
-    canvas.width = stage.width() / 1.5;         // TODO: originally 2
-    canvas.height = stage.height() / 1.5;
+    canvas.width = stage.width() / 1.2;         // TODO: originally 2
+    canvas.height = stage.height() / 1.2;
+
 
 // created canvas we can add to layer as "Konva.Image" element
     let image = new Konva.Image({
