@@ -14,7 +14,7 @@ $(document).ready(function () {
     let stage = new Konva.Stage({
         container: 'pad_container',
         width: width,
-        height: height,
+        height: height
     });
 
     let layer = new Konva.Layer();
@@ -25,7 +25,6 @@ $(document).ready(function () {
     let canvas = document.createElement('canvas');
     canvas.width = stage.width() / 1.2;         // TODO: originally 2
     canvas.height = stage.height() / 1.2;
-
 
 // created canvas we can add to layer as "Konva.Image" element
     let image = new Konva.Image({
@@ -176,9 +175,13 @@ function getPrediction(image, callback) {
     // Use ajax call to get prediction async and use callback to consume the result
     // image is list to be stringify-ed
 
+    $.support.cors = true;
     $.ajax({
+        // url: "http://0.0.0.0:8080/predict-spell",
+        // url: "predict-spell",
+        url: "http://35.185.86.112:8080/predict-spell",
         // url: "http://0.0.0.0:8080/predict",
-        url: "http://35.231.80.56:8080/predict",
+        // url: "http://35.231.80.56:8080/predict",
         method: 'POST',
         async: true,
         data: JSON.stringify(image),
